@@ -19,6 +19,7 @@ import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
 
 import {MaterialModule} from './material.module';
+import { MenusService } from './service/menus/menus.service';
  
 
 
@@ -39,7 +40,7 @@ import {MaterialModule} from './material.module';
     AngularFirestoreModule,
     MaterialModule
   ],
-  providers: [AfService, AdminGuard, SubscriberGuard],
+  providers: [AfService, AdminGuard, SubscriberGuard, MenusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
